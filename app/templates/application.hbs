@@ -1,5 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<p>
+  <button {{on 'click' this.toA}}>to A via RouterService</button>
+  <LinkTo @route='route-a'>to A with link-to</LinkTo>
+</p>
+<p>
+  <button {{on 'click' this.toB}}>to B via RouterService</button>
+  <LinkTo @route='route-b'>to B with link-to</LinkTo>
+</p>
 
 {{outlet}}
